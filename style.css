@@ -1,74 +1,137 @@
 body {
     background-color: #EDE7F6;
-    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif !important;
-    font-size: 14px;
+    text-align: center;
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    margin: 0px;
+    box-sizing: inherit;
     letter-spacing: 0.2px;
-    line-height: 20px ;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
 }
-.class1 {
-    float: left;
-    padding-right: 40px;
-    transform: translate(10%, -50%);
+div{
+    display: block;
 }
-.class1 a{
-    text-decoration: none;
+
+#box-header {
+    height: 100px;
+    display: flex;
+    position: inherit;
 }
-.class2 {
-    float: left;
-    padding-left: 710px;
-    text-align: right;
+#box1 {
+    width: 85%;
+    height: 60%;
+    background-color: #1a237e;
+    
 }
-.class2 a{
-    text-decoration: none;
+#box2 {
+    width: 15%;
+    height: 60%;
+    background-color: #1a237e;
+    
 }
-.login-head{
-    position: absolute;
-    background: #1a237e;
-    top: 0%;
-    left: 0%;
-    right: 0%;
-    height: 67px;
+.reg_box {
+    font-size: 1rem;
+    color: #fff;
+    display: block;
+    padding: 0 15px;
+    background-color: #1a237e;
     font-size: 14px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif ;
-    font-weight: normal;
-
+    font-weight: 400;
+    margin-top: 20px;
 }
-.login-header{
-    position:absolute;
-    top: 10%;
-    left: 43%;
-    height: 20px;
-    background: transparent;
-
+a {
+    text-decoration: none;
+}
+#c-name {
+    text-align: left;
+    background:  #1a237e;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    transform: translate(-1%,-20%);
+    padding-left: 20px;
+    height: 53px;
+    width: 99%;
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+}
+.register-bttn {
+    display:flex;
+    margin: 0 0 0 auto;
 }
 .container {
     margin: 0 auto;
     max-width: 1280px;
-}    
+}
+@media only screen and (min-width:601px)
+{
+    .container {
+        width: 85%;
+    }
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+@media only screen and (min-width: 601px)
+{.res-body {
+    width: 50%;
+    margin: auto;
+    left: auto;
+    right: auto;
+}
+}
+main > .mid {
+    width: 100%;
+}
+.mid {
+    margin-left: auto;
+    margin-right: auto;
+}
+#img1 {
+    height: auto;
+    width: 40px;
+}
+#img2 {
+    height: auto;
+    width: 60px;
+    max-width: 100%;
+}
+h4 {
+    color: #1a237e;
+    line-height: 110%;
+    font-size: 2.28rem;
+    margin: 1.4rem 0 0.8rem 0;
+    display: block;
+    margin-block-start: 0.7em;
+    margin-block-end: 0.7em;
+    font-weight: 400;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+p {
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 .center {
-    position: absolute;
+    position:relative;
     top: 69%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 350px;
-    height:250px;
+    transform: translate(-50%, -20%);
+    width: 286px;
+    height:258px;
     background: white;
     border-radius: 5px;
-    border-style: groove;
+    overflow: hidden;
 }    
-.smaller-image {
-    width: 40px;
-    transform: translateY(35%);
-}
-.smaller-image2 {
-    width: 70px
-}
-.center form{
-    padding: 30px 40px;
-    box-sizing: border-box;
+#thumbnail {
+    box-sizing: inherit;
+    box-shadow:0px 2px 2px 2px rgba(0,0,0,0.14),0px 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0px rgba(0,0,0,0.2);
 }
 form .txt_field {
     position: relative;
@@ -80,8 +143,10 @@ form .txt_field {
     margin-left: auto;
     background: none;
     outline: none;
-    height: 27px;
-    font-size: 16px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 20px;
+    font-size: 14px;
     padding: 0px, 5px;
     border: none;
 }
@@ -93,37 +158,56 @@ form .txt_field {
     transform: translateY(-50%);
     font-size: 16px;
     pointer-events: none;
-    transition: .5s;
+    transition: .3s;
 }
-
 .txt_field input:focus ~ label,
 .txt_field input:valid ~ label{
     top: -5px;
     color: #1a237e;
 }
+form {
+    padding: 0 30px 30px 30px;
+    box-sizing: border-box;
+    display: block;
+    margin: 0.5rem 0 1rem 0;
+    position: inherit;
+}
+.login-bttn {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    z-index: 1;
+    cursor: pointer;
+    background-color: #1a237e;
+    width: 50%;
+    height: 40px;
+    font-weight: 500;
+}
+.btn {
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 2px;
+    line-height: 36px;
+    padding: 0 16px;
+    outline: none;
+    box-shadow:0px 2px 2px 2px rgba(0,0,0,0.14),0px 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0px rgba(0,0,0,0.2);
 
-.click{
-    position: absolute;
-    bottom: 20%;
-    left: 30%;
-    width: 140px;
-    height:40px;
-    transform: translate(-50%, 130%);
-    background: #1a237e;
-    border-radius: 3px;
 }
-.click_txt{
-    transform: translate(0%, 30%);
-    color:white;
+.base_txt {
+    color:#11175e;
+    padding: 0 0.75rem;
+    min-height: 1px;
+    float: left;
+    width: 100%;
+    left: auto;
+    right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
 }
-.login-footer{
-    position: absolute;
-    bottom: 10px;
-    left: 45%;
-    height: 10px;
-    background: transparent;
-
-}
-.login-footer a{
+.base_txt a {
     text-decoration: none;
 }
