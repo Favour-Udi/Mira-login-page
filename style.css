@@ -13,7 +13,8 @@ div{
 #box-header {
     height: 100px;
     display: flex;
-    position: inherit;
+    position: relative;
+    box-sizing: inherit;
 }
 #box1 {
     width: 85%;
